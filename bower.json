@@ -1,0 +1,9 @@
+{
+  "name": "walwyn-wellness-bower",
+  "description": "This is used to manage all of the libraries that we will be using for walwyn wellness",
+  "version": "1.0.0",
+  "dependencies": {
+    "materialize": "^0.97.7",
+    "animate.css": "^3.5.2"
+  }
+}

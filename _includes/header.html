@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{site.data.global.title}}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/animate.css/animate.min.css">
+
+</head>
+<body> 
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">{{site.data.global.title}}</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                {% for item in site.data.nav.main %}
+                    <li><a class="navbar-link" href="{{item.url}}">{{item.text}}</a></li>
+                {% endfor %}
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                {% for item in site.data.nav.main %}
+                    <li><a href="{{item.url}}">{{item.text}}</a></li>
+                {% endfor %}
+            </ul>
+       </div>
+    </nav>
+    <main>
+        
+    
+           

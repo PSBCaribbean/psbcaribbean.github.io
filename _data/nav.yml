@@ -1,7 +1,6 @@
 main:
   - {url: '/', text: 'Home'}
-  - {url: '/link_1', text: 'Link 1'}
-  - {url: '/link_2', text: 'Link 2'}
-  - {url: '/link_3', text: 'Link 3'}
-  - {url: '/link_4', text: 'Link 4'}
-  - {url: '/link_5', text: 'Link 5'}
+  - {url: '/about_us', text: 'About Us'}
+  - {url: '/mens_combines', text: "Men's Combines"}
+  - {url: '/registration', text: 'Registration'}
+  - {url: '/contact_us', text: 'Contact Us'}

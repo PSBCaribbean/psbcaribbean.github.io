@@ -1,6 +1,14 @@
 {% include header.html %}
 
+{% if page.banner %}
+
+<div class="banner container valign-wrapper" style="background-image: url('{{page.banner}}');">
+		<span class="{{page.banner-class}} animated fadeInDownBig valign right-align">{{page.banner-content}}</span>
+</div>
+
 {{content}}
+
+{% endif %}
 
 {% include footer.html %}
 

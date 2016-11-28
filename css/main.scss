@@ -7,21 +7,20 @@
 @import '../bower_components/materialize/sass/materialize';
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$banner-font-family: 'Permanent Marker', sans-serif;
+$header-font-family: 'Catamaran', cursive;
 $base-font-size:   16px;
-$base-font-weight: 400;
+$base-font-weight: 800;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$psb-red:			#fb3640;
+$psb-grey: 			#363537;
+$psb-yellow:      	#ffc60e;
+$psb-white: 		#fefefe;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -40,3 +39,59 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+//Header and Footer Design
+
+.nav-header, footer.page-footer {
+	background-color: $psb-yellow;
+	font-family: $header-font-family;
+	text-transform: uppercase;
+	font-weight: $base-font-weight;
+}
+
+nav, footer {
+
+	ul a{
+		color: $psb-grey;
+	}
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+}
+} 
+
+.footer-text, nav .brand-logo {
+	color: $psb-grey;
+}
+
+//Banner
+
+.banner {
+	height: 100vh;
+	width: 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-top: -56px;
+    z-index: -1;
+}
+
+.slide-down{
+    width: 100%;
+    font-family: $banner-font-family;
+    font-weight: 400;
+    font-size: 68px;
+    padding-right: 80px;
+    line-height: 86px;
+    color: $psb-white;
+    strong{
+        font-weight: 800;
+        font-size: 100px;
+    }
+}
+

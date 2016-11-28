@@ -1,6 +1,6 @@
-# Materialize Jekyll Barebones Theme
+# PSB Website
 
-This repository only serves as a basic theme to jump start any static website you try to build. 
+This repository only serves as website for the company PSB Caribbean Elite Soccer 
 
 To start you can:
 

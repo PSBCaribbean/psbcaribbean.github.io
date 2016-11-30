@@ -5,22 +5,43 @@ banner-content: "ARE YOU <br/> <strong> READY? </strong>"
 banner-class: slide-down
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+        <div class="valign">
+          <h2 class="header"> UPCOMING MEN'S COMBINES </h2>
+        </div>
+        {% for item in site.data.index.combines %}
+        <div class="combine-card col s12 m4">
+          <div class="card small hoverable">
+            <div class="card-content">
+              <span class="card-title {{item.color}} activator header color-dark"> {{item.title}} </span>
+              <p class="color-grey"> {{item.date}} </p>
+            </div>
+            <div class="card-image waves-effect waves-block">
+              <img class="activator" src="{{item.image-url}}">
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="line-padding">
+      <hr class="big-line">
+    </div>
+    <div class="col s12">
+      <div class="valign">
+        <h2 class="header"> TEAMS WE'VE WORKED WITH </h2>
+      </div>
+      {% for item in site.date.index.teams %}
+      <div class="team-image col s12 m4">
+        <div class="hoverable">
+          <img class="activator" src="{{item.image-url}}"> 
+        </div>
+        <div class="team-content">
+          <p class="color-red"> {{item.name}} </p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </div>

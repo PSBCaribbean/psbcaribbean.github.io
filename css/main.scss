@@ -22,6 +22,22 @@ $psb-yellow:      	#ffc60e;
 $psb-white: 		#fefefe;
 
 
+.color-red {
+    color: $psb-red;
+}
+
+.color-grey {
+    color: $psb-grey;
+}
+
+.color-yellow {
+    color: $psb-yellow;
+}
+
+.color-white{
+    color: $psb-white;
+}
+
 // Width of the content area
 $content-width:    800px;
 
@@ -95,3 +111,26 @@ nav, footer {
     }
 }
 
+//Index 
+.header{
+    text-align: center;
+    color: $psb-grey;
+}
+
+
+.combine-card{
+    padding: 20px;
+}
+
+.big-line{
+    background-color: $psb-yellow;
+    height: 5px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.line-padding{
+    padding: 50px;
+}

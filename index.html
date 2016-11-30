@@ -9,7 +9,7 @@ banner-class: slide-down
   <div class="row">
     <div class="col s12">
         <div class="valign">
-          <h2 class="header"> UPCOMING MEN'S COMBINES </h2>
+          <h2 class="header padding"> UPCOMING MEN'S COMBINES </h2>
         </div>
         {% for item in site.data.index.combines %}
         <div class="combine-card col s12 m4">
@@ -30,16 +30,18 @@ banner-class: slide-down
     </div>
     <div class="col s12">
       <div class="valign">
-        <h2 class="header"> TEAMS WE'VE WORKED WITH </h2>
+        <h2 class="header padding"> TEAMS WE'VE WORKED WITH </h2>
       </div>
-      {% for item in site.date.index.teams %}
+      {% for item in site.data.index.teams %}
       <div class="team-image col s12 m4">
-        <div class="hoverable">
-          <img class="activator" src="{{item.image-url}}"> 
-        </div>
-        <div class="team-content">
-          <p class="color-red"> {{item.name}} </p>
-        </div>
+        <a href="{{item.url}}">
+          <div>
+            <img class="activator" src="{{item.image-url}}"> 
+          </div>
+          <div class="team-content">
+            <p class="color-red text-center"> {{item.name}} </p>
+          </div>
+        </a>
       </div>
       {% endfor %}
     </div>

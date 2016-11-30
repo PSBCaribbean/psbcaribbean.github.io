@@ -4,4 +4,9 @@ combines:
   - {title: 'Grenada', image-url: '/assets/images/second-card-image.jpg', date: 'March 16th 2017', sec-color: 'color-grey'}
   - {title: 'St. Vincent', image-url: '/assets/images/third-card-image.jpg', date: 'April 16th 2017', sec-color: 'color-grey'}
 teams:
-  - {image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }

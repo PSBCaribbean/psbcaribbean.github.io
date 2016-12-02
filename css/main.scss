@@ -111,6 +111,21 @@ nav, footer {
     }
 }
 
+.slide-down-bottom{
+    width: 100%;
+    font-family: $banner-font-family;
+    font-weight: 400;
+    font-size: 68px;
+    padding-right: 80px;
+    line-height: 86px;
+    color: $psb-white;
+    padding-top: 600px;
+    strong{
+        font-weight: 800;
+        font-size: 80px;
+    }
+}
+
 //Index 
 .header{
     text-align: center;
@@ -149,25 +164,57 @@ nav, footer {
     right: 0;
     bottom: 0;
     left: 0;
-    color: $psb-grey;
-    background-color: (255, 198, 14, 0.25);
     text-transform: uppercase;
     text-align: center;
     transition: opacity 250ms;
     white-space: nowrap;
-    padding: 5px;
+    padding: 0px;
+    .coach-title{
+        display: none;
+        font-size: 40px;
+    }
+    .coach-text{
+        display: none;
+        font-size: 20px;
+    }
+    .line-style{
+        display: none;
+    }
+    &:hover, &:focus{
+        background-color: rgba(0, 0, 0, 0.5);
+        .coach-title, .coach-text, .line-style{
+            display: block;
+        }
+    }
 }
 
-.no-highlight{
-    user-select: none;
-    cursor: default;
-}
 
 .no-margin{
-    margin: 0;
+    margin: 0px;
 }
 
+.wordwrap {
+    white-space: pre-wrap;     /* CSS3 */       
+    white-space: -moz-pre-wrap; /* Firefox */        
+    white-space: -pre-wrap;     /* Opera <7 */       
+    white-space: -o-pre-wrap;   /* Opera 7 */        
+    word-wrap: break-word;      /* IE */ 
+}
 
-.coach-name{
-    word-break: break-all;
+#grid {
+    .col {
+        padding: 0 0 0 0;
+    }
+}
+
+.profile {
+    height: 400px;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }

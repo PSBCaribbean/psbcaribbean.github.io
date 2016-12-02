@@ -1,8 +1,8 @@
 ---
 layout: default
 banner: "/assets/images/about-us-banner.jpg"
-banner-content: "WHERE WARRIORS ARE <br/> <strong> MADE </strong>"
-banner-class: slide-down
+banner-content: "WHERE <strong> WARRIORS </strong> ARE <strong> MADE </strong>"
+banner-class: slide-down-bottom
 ---
 
 <div class="container">
@@ -39,11 +39,14 @@ banner-class: slide-down
 		<div id="grid">
 			<div class="no-margin">
 				<div class="col s12 m4">
-					<div class="profile">
-						<img class="profile-images" src="{{item.image-url}}">
-						<div class= "overlay no-highlight">
+					<div class="profile" style="background-image: url('{{item.image-url}}');">
+						<div class= "overlay">
 							<div class="coach-title">
-								<h3 class="coach-name"> {{item.name}} </h3>
+								<span class="coach-name color-white"> {{item.name}} </span>
+							</div>
+							<hr class="line-style">
+							<div>
+								<p class="flow-text color-white coach-text wordwrap"> {{item.text}} </p>
 							</div>
 						</div>
 					</div>

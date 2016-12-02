@@ -4,9 +4,9 @@ staff:
   - {name: 'Lenny Hewlett', position: 'Coach Director', image-url: '/assets/images/coach.jpg' }
   - {name: 'David Thomas', position: 'Team Manager', image-url: '/assets/images/coach.jpg' }
 coach: 
-  - {name: 'Bo Matthew', image-url: '/assets/images/coach2.jpg' }
-  - {name: 'Lenny Hewlett', image-url: '/assets/images/coach2.jpg' }
-  - {name: 'David Thomas', image-url: '/assets/images/coach2.jpg' }
-  - {name: 'Bo Matthew', image-url: '/assets/images/coach2.jpg' }
-  - {name: 'Lenny Hewlett', image-url: '/assets/images/coach2.jpg' }
-  - {name: 'David Thomas', image-url: '/assets/images/coach2.jpg' }
+  - {name: 'Bo Matthew', image-url: '/assets/images/coach2.jpg', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" }
+  - {name: 'Lenny Hewlett', image-url: '/assets/images/coach2.jpg', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" }
+  - {name: 'David Thomas', image-url: '/assets/images/coach2.jpg', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" }
+  - {name: 'Bo Matthew', image-url: '/assets/images/coach2.jpg', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" }
+  - {name: 'Lenny Hewlett', image-url: '/assets/images/coach2.jpg', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" }
+  - {name: 'David Thomas', image-url: '/assets/images/coach2.jpg', text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam" }

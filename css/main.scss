@@ -122,20 +122,52 @@ nav, footer {
     padding: 20px;
 }
 
-.big-line{
-    background-color: $psb-yellow;
-    height: 5px;
-}
-
 .padding {
     padding: 20px;
-}
-
-.line-padding{
-    padding: 50px;
 }
 
 .text-center{
     text-align: center;
 }
 
+.line-style{
+    border-top: 3px solid $psb-yellow;
+    border-bottom: 3px solid $psb-yellow;
+    background-color: $psb-yellow;
+}
+
+//About PSB
+
+#grid .profile{
+    position: relative;
+    background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: $psb-grey;
+    background-color: (255, 198, 14, 0.25);
+    text-transform: uppercase;
+    text-align: center;
+    transition: opacity 250ms;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.no-highlight{
+    user-select: none;
+    cursor: default;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+
+.coach-name{
+    word-break: break-all;
+}

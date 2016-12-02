@@ -1,0 +1,55 @@
+---
+layout: default
+banner: "/assets/images/about-us-banner.jpg"
+banner-content: "WHERE WARRIORS ARE <br/> <strong> MADE </strong>"
+banner-class: slide-down
+---
+
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="valign">
+				<h2 class="header padding"> ABOUT PSB </h2>
+				<p class="text justify red-text"> {{site.data.about_psb.intro}}
+			</div>
+		</div>
+		<hr class="line-style">
+		<br>
+		{% for item in site.data.about_psb.staff %}
+		<br>
+		<div class="col s12 m4">
+			<div class="card coach-card">
+				<div>
+             		<span class="card-title {{item.color}} activator header color-dark"> {{item.name}} </span>
+             	</div>
+              	<p class="color-blue"> {{item.position}} </p>
+				<div class="card-image">
+					<img class="activator" src="{{item.image-url}}"> 
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+		<br>
+		<hr class="line-style">
+		<br>
+		<div class="valign">
+			<h2 class="header padding"> PSB COACHES </h2>
+		</div>
+		{% for item in site.data.about_psb.coach %}
+		<div id="grid">
+			<div class="no-margin">
+				<div class="col s12 m4">
+					<div class="profile">
+						<img class="profile-images" src="{{item.image-url}}">
+						<div class= "overlay no-highlight">
+							<div class="coach-title">
+								<h3 class="coach-name"> {{item.name}} </h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

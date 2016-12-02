@@ -14,7 +14,7 @@ banner-class: slide-down
         {% for item in site.data.index.combines %}
         <div class="combine-card col s12 m4">
           <div class="card small hoverable">
-            <div class="card-content">
+            <div>
               <span class="card-title {{item.color}} activator header color-dark"> {{item.title}} </span>
               <p class="color-grey"> {{item.date}} </p>
             </div>
@@ -25,9 +25,7 @@ banner-class: slide-down
         </div>
         {% endfor %}
     </div>
-    <div class="line-padding">
-      <hr class="big-line">
-    </div>
+    <hr class="line-style">
     <div class="col s12">
       <div class="valign">
         <h2 class="header padding"> TEAMS WE'VE WORKED WITH </h2>

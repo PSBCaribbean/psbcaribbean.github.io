@@ -1,6 +1,6 @@
 main:
   - {url: '/', text: 'Home'}
-  - {url: '/about_us', text: 'About Us'}
-  - {url: '/mens_combines', text: "Men's Combines"}
-  - {url: '/registration', text: 'Registration'}
-  - {url: '/contact_us', text: 'Contact Us'}
+  - {url: '/_pages/about_us.html', text: 'About Us'}
+  - {url: '/_pages/mens_combines.html', text: "Men's Combines"}
+  - {url: '/_pages/registration.html', text: 'Registration'}
+  - {url: '/_pages/contact_us.html', text: 'Contact Us'}

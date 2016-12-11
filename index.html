@@ -11,11 +11,11 @@ banner-class: slide-down
         <div class="valign">
           <h2 class="header padding"> UPCOMING MEN'S COMBINES </h2>
         </div>
-        {% for item in site.data.index.combines %}
+        {% for item in site.data.global.combines %}
         <div class="combine-card col s12 m4">
           <div class="card small hoverable">
             <div>
-              <span class="card-title {{item.color}} activator header color-dark"> {{item.title}} </span>
+              <span class="card-title {{item.color}} activator header color-dark"> {{item.country}} </span>
               <p class="color-grey"> {{item.date}} </p>
             </div>
             <div class="card-image waves-effect waves-block">

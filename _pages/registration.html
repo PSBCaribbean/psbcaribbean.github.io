@@ -11,20 +11,20 @@ layout: default
 			</div>
 			<div class="valign">
 				<div class="row">
-				    <form class="col s12">
+				    <form class="col s12 psb-form">
 				      <div class="row">
 				        <div class="input-field col s6">
-				          <input placeholder="Jane Doe" id="full_name" type="text" class="validate">
+				          <input placeholder="John Doe" id="full_name" type="text" class="validate">
 				          <label for="full_name">Full Name</label>
 				        </div>
 				        <div class="input-field col s6">
-				          <input id="email" type="email" class="validate">
+				          <input placeholder="johndoe@email.com" id="email" type="email" class="validate">
 				          <label for="email">Email</label>
 				        </div>
 				      </div>
 				      <div class="row">
 				        <div class="input-field col s6">
-				          <input placeholder="246-555-555" id="phone_number" type="tel" class="validate">
+				          <input placeholder="555-555-555" id="phone_number" type="tel" class="validate">
 				          <label for="phone_number">Phone Number</label>
 				        </div>
 				        <div class="col s6">
@@ -66,7 +66,7 @@ layout: default
 				      </div>
 				      <div class="row">
 				        <div class="input-field col s12">
-				          <input placeholder="Awesome Football Club" id="previous-clubs" type="text" class="validate">
+				          <input placeholder="Viking Warriors" id="previous-clubs" type="text" class="validate">
 				          <label for="previous-clubs">Previous Clubs</label>
 				        </div>
 				      </div>
@@ -85,17 +85,15 @@ layout: default
 				          <label for="country_name"> Passport Issuing Country </label>
 				        </div>
 				      </div>
-				        <div class="row valign-wrapper">
-				        	<form action="#" class="valign">
-				        	    <p>
-				        	      <input type="checkbox" id="box"/>
-				        	      <label for="box">CHECK BOX IF YOU AGREE TO OUR TERMS AND CONDITIONS </label>
-				        	    </p>
-				        	</form>
+				        <div class="col s12">
+		        	      <input type="checkbox" id="box"/>
+		        	      <label for="box">CHECK BOX IF YOU AGREE TO OUR TERMS AND CONDITIONS </label>
 				        </div>
-				        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-				            <i class="material-icons right"></i>
-				        </button>
+				        <div class="col s12 valign-wrapper">
+					        <button class="btn waves-effect waves-light valign submit-btn" type="submit" name="action">Submit
+					            <i class="material-icons right"></i>
+					        </button>
+				        </div>
 				    </form>
 				  </div>
 			</div>

@@ -225,3 +225,66 @@ nav, footer {
     position: relative;
 }
 
+//Registration 
+
+.psb-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    input:not([type]),input[type=text], input[type=password],
+    input[type=email], input[type=url], input[type=time],
+    input[type=date], input[type=datetime], input[type=datetime-local],
+    input[type=tel], input[type=number], input[type=search],
+    textarea.materialize-textarea{
+        border-bottom: $psb-yellow;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+    }
+
+    .submit-btn{
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: $psb-yellow;
+
+    }
+
+    input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
+    input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]),
+    input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), 
+    input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), 
+    input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), 
+    input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), 
+    textarea.materialize-textarea:focus:not([readonly]){
+        border-bottom: 3px solid $psb-yellow;
+        box-shadow: 0 1px 0 0 $psb-yellow;
+
+        + label{
+            color: $psb-grey;
+        }
+    }
+
+    [type="checkbox"]:checked + label:before {
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-right: 2px solid $psb-yellow;
+        border-bottom: 2px solid $psb-yellow;
+    }
+
+    .dropdown-content li > a, .dropdown-content li > span, .picker__year-display {
+        color: $psb-grey;
+    }
+
+    .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+        background-color: $psb-yellow;
+    }
+
+    .picker__date-display, .picker__weekday-display {
+        background-color: $psb-yellow;
+        color: $psb-grey;
+    }
+
+    .picker__close, .picker__today, .picker__day.picker__day--today {
+        color: $psb-yellow;
+    }
+
+}

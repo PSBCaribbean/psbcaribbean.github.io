@@ -1,7 +1,7 @@
 teams:
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
+  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }

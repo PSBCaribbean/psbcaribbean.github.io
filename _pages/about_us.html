@@ -11,28 +11,28 @@ banner-class: slide-down-bottom
 		<div class="col s12">
 			<div class="valign">
 				<h2 class="header padding"> ABOUT PSB </h2>
-				<p class="flow-text justify red-text"> {{site.data.about_psb.intro}} </p>
+				<p class="flow-text justify"> {{site.data.about_psb.intro}} </p>
 			</div>
 		</div>
-		<hr class="line-style">
-		<br>
+		<div class="col s12 line-break"></div>
 		{% for item in site.data.about_psb.staff %}
-		<br>
 		<div class="col s12 m4">
-			<div class="card coach-card">
-				<div>
-             		<span class="card-title {{item.color}} activator header color-dark"> {{item.name}} </span>
-             	</div>
-              	<p class="color-blue"> {{item.position}} </p>
-				<div class="card-image">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
 					<img class="activator" src="{{item.image-url}}"> 
 				</div>
+				<div class="card-content">
+             		<span class="card-title {{item.color}} activator header color-dark"> {{item.name}} <i class="material-icons right">more_vert</i> </span>
+              		<p class="color-blue"> {{item.position}} </p>
+             	</div>
+             	<div class="card-reveal">
+             	      <span class="card-title grey-text text-darken-4">{{item.name}}<i class="material-icons right">close</i></span>
+             	      <p>{{item.text}}</p>
+             	</div>
 			</div>
 		</div>
 		{% endfor %}
-		<br>
-		<hr class="line-style">
-		<br>
+		<div class="col s12 line-break"></div>
 		<div class="valign">
 			<h2 class="header padding"> PSB COACHES </h2>
 		</div>

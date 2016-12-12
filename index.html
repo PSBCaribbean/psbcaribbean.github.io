@@ -14,30 +14,30 @@ banner-class: slide-down
         {% for item in site.data.global.combines %}
         <div class="combine-card col s12 m4">
           <div class="card small hoverable">
-            <div>
-              <span class="card-title {{item.color}} activator header color-dark"> {{item.country}} </span>
+            <div class="card-image">
+              <img src="{{item.image-url}}">
+              <span class="card-title {{item.color}} header color-dark"> {{item.country}} </span>
+            </div>
+            <div class="card-content">
               <p class="color-grey"> {{item.date}} </p>
-            </div>
-            <div class="card-image waves-effect waves-block">
-              <img class="activator" src="{{item.image-url}}">
-            </div>
+            </div>  
           </div>
         </div>
         {% endfor %}
     </div>
-    <hr class="line-style">
+    <div class="col s12 line-break"></div>
     <div class="col s12">
       <div class="valign">
         <h2 class="header padding"> TEAMS WE'VE WORKED WITH </h2>
       </div>
       {% for item in site.data.index.teams %}
-      <div class="team-image col s12 m4">
+      <div class="team-image grow col s12 m4 hover-{{item.hover-color}}">
         <a href="{{item.url}}">
           <div>
-            <img class="activator" src="{{item.image-url}}"> 
+            <img src="{{item.image-url}}"> 
           </div>
           <div class="team-content">
-            <p class="color-red text-center"> {{item.name}} </p>
+            <span class="color-red text-center"> {{item.name}} </span>
           </div>
         </a>
       </div>

@@ -14,21 +14,21 @@ permalink: /registration/
 				<div class="row">
 				    <form class="col s12 psb-form">
 				      <div class="row">
-				        <div class="input-field col s6">
+				        <div class="input-field col s12 m6">
 				          <input placeholder="John Doe" id="full_name" type="text" class="validate">
 				          <label for="full_name">Full Name</label>
 				        </div>
-				        <div class="input-field col s6">
+				        <div class="input-field col s12 m6">
 				          <input placeholder="johndoe@email.com" id="email" type="email" class="validate">
 				          <label for="email">Email</label>
 				        </div>
 				      </div>
 				      <div class="row">
-				        <div class="input-field col s6">
+				        <div class="input-field col s12 m6">
 				          <input placeholder="555-555-555" id="phone_number" type="tel" class="validate">
 				          <label for="phone_number">Phone Number</label>
 				        </div>
-				        <div class="col s6">
+				        <div class="col s12 m6">
 				          <label for="dob"> Date of Birth </label>
 				          <input placeholder="01/01/1990" id="dob" type="date" class="datepicker">
 				        </div>
@@ -37,30 +37,18 @@ permalink: /registration/
 				        <div class="input-field col s6">
 				        	<select>
 				                <option value="" disabled selected>Choose</option>
-				                <option value="1"> GK </option>
-				                <option value="2"> RB </option>
-				                <option value="3"> LB </option>
-				                <option value="4"> CB </option>
-				                <option value="5"> RM </option>
-				                <option value="6"> LM </option>
-				                <option value="7"> CM </option>
-				                <option value="8"> FWD </option>
-				                <option value="9"> Other </option>
+				                {% for pos in site.data.registration.positions %}
+				                	<option value="{{pos}}">{{pos}}</option>
+				                {% endfor %}
 				            </select>
 				            <label>Primary Position</label>
 				        </div>
 				        <div class="input-field col s6">
 				        	<select>
 				                <option value="" disabled selected>Choose</option>
-				                <option value="1"> GK </option>
-				                <option value="2"> RB </option>
-				                <option value="3"> LB </option>
-				                <option value="4"> CB </option>
-				                <option value="5"> RM </option>
-				                <option value="6"> LM </option>
-				                <option value="7"> CM </option>
-				                <option value="8"> FWD </option>
-				                <option value="9"> Other </option>
+				                {% for pos in site.data.registration.positions %}
+				                	<option value="{{pos}}">{{pos}}</option>
+				                {% endfor %}
 				            </select>
 				            <label>Secondary Position</label>
 				        </div>
@@ -72,7 +60,7 @@ permalink: /registration/
 				        </div>
 				      </div>
 				      <div class="row">
-				        <div class="input-field col s6">
+				        <div class="input-field col s12 m6">
 				          	<select>
 				                  <option value="" disabled selected>Choose</option>
 				                  {% for item in site.data.global.combines %}
@@ -81,7 +69,7 @@ permalink: /registration/
 				            </select>
 				          <label>COMBINE</label>
 				        </div>
-				        <div class="input-field col s6">
+				        <div class="input-field col s12 m6">
 				          <input placeholder="Country Name" id="country_name" type="text" class="validate">
 				          <label for="country_name"> Passport Issuing Country </label>
 				        </div>

@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /terms_conditions/
+---
+
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="valign">
+				<h1 class="header padding"> PSB TERMS AND CONDITIONS </h1>
+				{% for item in site.data.terms_conditions.paragraphs %}
+				<h4 class="valign-wrapper terms-padding sub-text"> {{item.heading}} </h4>
+				<p class="text padding justify flow-text valign-wrapper"> {{item.text}} </p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

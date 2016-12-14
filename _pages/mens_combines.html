@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /mens_combines/
+banner: "/assets/images/about-us-banner.jpg"
+banner-content: "FIRST STEP TO A <strong> PROFESSIONAL FOOTBALL CAREER </strong> "
+banner-class: slide-down-bottom
+---
+
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="valign">
+				<h2 class="header padding">MEN'S COMBINES</h2>
+				<p class="flow-text justify">{{site.data.mens_combines.intro}}</p>
+			</div>			
+		</div>
+
+		<div class="col s12 line-break"></div>
+
+		{% for item in site.data.global.combines %}
+		<div class="combine-card col s12 m4">
+			<div class="card small hoverable">
+			  <div class="card-image">
+			    <img src="{{item.image-url}}">
+			    <div class="after"></div>
+			    <span class="card-title {{item.color}} header color-dark"> {{item.country}} </span>
+			  </div>
+			  <div class="card-content">
+			    <p class="color-grey flow-text"> {{item.date}} </p>
+			  </div>  
+			</div>
+		</div>
+		{% endfor %}
+		
+		<div class="col s12 line-break"></div>
+
+		<div class="col s12">
+			<div class="valign">
+				<h2 class="header padding">COST</h2>
+				<p class="flow-text justify">{{site.data.mens_combines.cost}}</p>
+			</div>			
+		</div>
+
+		<div class="col s12 line-break"></div>
+
+		<div class="col s12">
+			<div class="valign">
+				<h2 class="header padding">ACCOMMODATION</h2>
+				<p class="flow-text justify">{{site.data.mens_combines.accommodation}}</p>
+			</div>			
+		</div>
+
+		<div class="col s12 line-break"></div>
+
+		<div class="col s12">
+			<div class="valign">
+				<h2 class="header padding">TRANSPORTATION</h2>
+				<p class="flow-text justify">{{site.data.mens_combines.transportation}}</p>
+			</div>			
+		</div>
+
+
+	</div>	
+</div>

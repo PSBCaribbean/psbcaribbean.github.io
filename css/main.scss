@@ -85,7 +85,7 @@ $on-laptop:        800px;
 
 .nav-header{
     a img{
-        height: 125px;
+        height: 120px;;
         padding-left: 50px;
     }
 }
@@ -98,7 +98,7 @@ nav, footer {
 
 	ul a{
 		color: $psb-grey;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
 
         &:visited{
             color: $psb-grey;
@@ -110,6 +110,12 @@ nav, footer {
 		}
 }
 } 
+
+footer{
+    .logo{
+        height: 250px;
+    }
+}
 
 .footer-text, nav .brand-logo {
 	color: $psb-grey;
@@ -171,13 +177,29 @@ nav, footer {
     padding-right: 80px;
     line-height: 86px;
     color: $psb-white;
-    padding-top: 600px;
+    padding-top: 30vh;
+    text-align: center;
     strong{
         font-weight: 800;
         font-size: 80px;
     }
 }
 
+@media (max-width: 600px){
+
+    .slide-down-bottom{
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+        strong{
+            font-size: 60px;
+        }
+    }
+
+    h1{
+        font-size: 45px;
+    }
+}
 //Index 
 .header{
     text-align: center;

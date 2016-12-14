@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /privacy_disclaimer/
+---
+
+<div class="container"> 
+	<h1 class="header padding"> {{ site.data.privacy_disclaimer.privacy-heading }} </h1>
+	{% for item in site.data.privacy_disclaimer.privacy-sections %}
+	<div class="row">
+	        <div class="heading color-grey"><h5>{{item.heading}}</h5></div>
+	            <div>
+	            	{% for paragraph-item in item.paragraphs %}
+	            	    <p class="flow-text text">{{paragraph-item.text}}</p>
+	                {% endfor %}
+	                    <ul class="flow-text text">
+	                        {% for list-item in item.list%}
+	                            <li>{{list-item.text}}</li>
+	                        {% endfor %}
+	                    </ul>
+	            
+	            </div>
+	</div>
+	{% endfor %}
+		<div class="col s12 line-break"></div>
+		<h1 class="header padding"> {{ site.data.privacy_disclaimer.disclaimer-heading }} </h1>
+		{% for item in site.data.privacy_disclaimer.disclaimer-paragraphs %}
+		<div class="row">
+	        <div class="valign">
+	            <p class="flow-text valign-wrapper justify text">{{item.text}}</p>
+	        </div>
+		</div>
+		{% endfor %}
+</div>

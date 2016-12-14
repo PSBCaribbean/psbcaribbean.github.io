@@ -8,7 +8,7 @@
 
 // Our variables
 $banner-font-family: 'Permanent Marker', sans-serif;
-$header-font-family: 'Catamaran', cursive;
+$header-font-family: 'Catamaran', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 800;
 $small-font-size:  $base-font-size * 0.875;
@@ -25,12 +25,12 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: $header-font-family !important;
 }
 
 main {
   flex: 1 0 auto;
 }
-
 
 .color-red {
     color: $psb-red;

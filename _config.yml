@@ -28,3 +28,5 @@ github_username:  jekyll
 markdown: kramdown
 theme: minima
 include: ['_pages']
+sass:
+  sass_dir: bower_components

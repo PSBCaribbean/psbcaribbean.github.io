@@ -135,6 +135,13 @@ footer{
     .logo{
         height: 250px;
     }
+
+    p {
+        font-weight: 400;
+        strong{
+            font-weight: 800;
+        }
+    }
 }
 
 .footer-text, nav .brand-logo {
@@ -172,6 +179,7 @@ footer{
     position: relative;
     margin-top: -56px;
     z-index: -1;
+
     // position: relative;
 
 
@@ -183,6 +191,7 @@ footer{
         height: 100%;
         background-color: black;
         opacity: 0.2;
+
     }
 }
 
@@ -229,6 +238,10 @@ footer{
 
     h1{
         font-size: 45px;
+    }
+
+    .header h1,h2{
+        font-size: 30px;
     }
 }
 //Index 
@@ -488,4 +501,50 @@ body::before{ content:''; display:inline-block; height:100%; vertical-align:midd
 *{ margin:0; padding:0; }
 .ball{ vertical-align: middle; }
 
+}
+
+.btn-2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 0;
+    background-color: $psb-yellow;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+  background-color: $psb-yellow;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: $psb-grey;
+  transition: width 350ms ease-in-out;
+  background-color: $psb-yellow;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  background-color: $psb-yellow;
+  width: 70%;
 }

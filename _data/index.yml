@@ -1,7 +1,5 @@
 teams:
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
-  - {url: '#', image-url: '/assets/images/team_logo.png', name: 'Football ACA', hover-color: 'blue' }
+  - {url: 'https://www.mancity.com/', image-url: '/assets/images/teams/man_city.png', name: 'Manchester City', hover-color: 'blue' }
+  - {url: 'http://www.evertonfc.com/', image-url: '/assets/images/teams/everton.jpg', name: 'Everton', hover-color: 'blue' }
+  - {url: 'https://www.nufc.co.uk/', image-url: '/assets/images/teams/new_castle.jpg', name: 'Newcastle United', hover-color: 'blue' }
+  - {url: 'http://www.itfc.co.uk/', image-url: '/assets/images/teams/ipswich.png', name: 'Ipswich Town', hover-color: 'blue' }

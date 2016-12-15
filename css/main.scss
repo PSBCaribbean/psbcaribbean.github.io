@@ -116,14 +116,18 @@ nav{
 }
 nav, footer {
 
-	ul a{
+	ul {
+     
+        margin-left: 0px;
+        a{
 		color: $psb-grey;
         font-size: 1.6rem;
 
         &:visited{
             color: $psb-grey;
         }
-	}
+	   }
+    }
 	a{
 		&:hover{
 			text-decoration: none;

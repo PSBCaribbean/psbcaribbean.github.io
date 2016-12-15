@@ -548,3 +548,7 @@ body::before{ content:''; display:inline-block; height:100%; vertical-align:midd
   background-color: $psb-yellow;
   width: 70%;
 }
+
+.register-modal-btn:hover{
+    background-color: $psb-yellow;
+}

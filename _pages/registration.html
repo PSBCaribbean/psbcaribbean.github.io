@@ -7,35 +7,39 @@ permalink: /registration/
 	<div class="row">
 		<div class="col s12">
 			<div class="valign">
-				<h1 class="header padding"> PSB REGISTRATION </h1>
+				<h2 class="header padding"> PSB REGISTRATION </h2>
 				<p class="text justify flow-text"> {{site.data.registration.intro}} </p>
 			</div>
 			<div class="valign">
 				<div class="row">
-				    <form class="col s12 psb-form">
+				    <form class="col s12 psb-form" action="https://formspree.io/raman@karibfusion.com" method="POST">
+						<input type="hidden" name="_next" value="/form_response" />
+						<input type="hidden" name="_subject" value="Registration Form" />
+						<input type="hidden" name="_format" value="plain" />
+						<input type="text" name="_gotcha" style="display:none" />
 				      <div class="row">
 				        <div class="input-field col s12 m6">
-				          <input placeholder="John Doe" id="full_name" type="text" class="validate">
+				          <input placeholder="John Doe" name="full_name" id="full_name" type="text" class="validate">
 				          <label for="full_name">Full Name</label>
 				        </div>
 				        <div class="input-field col s12 m6">
-				          <input placeholder="johndoe@email.com" id="email" type="email" class="validate">
+				          <input placeholder="johndoe@email.com" name="email" id="email" type="email" class="validate">
 				          <label for="email">Email</label>
 				        </div>
 				      </div>
 				      <div class="row">
 				        <div class="input-field col s12 m6">
-				          <input placeholder="555-555-555" id="phone_number" type="tel" class="validate">
+				          <input placeholder="555-555-555" name="phone_number" id="phone_number" type="tel" class="validate">
 				          <label for="phone_number">Phone Number</label>
 				        </div>
 				        <div class="col s12 m6">
 				          <label for="dob"> Date of Birth </label>
-				          <input placeholder="01/01/1990" id="dob" type="date" class="datepicker">
+				          <input placeholder="01/01/1990" name="dob" id="dob" type="date" class="datepicker">
 				        </div>
 				      </div>
 				      <div class="row">
 				        <div class="input-field col s6">
-				        	<select>
+				        	<select name="pos1">
 				                <option value="" disabled selected>Choose</option>
 				                {% for pos in site.data.registration.positions %}
 				                	<option value="{{pos}}">{{pos}}</option>
@@ -44,7 +48,7 @@ permalink: /registration/
 				            <label>Primary Position</label>
 				        </div>
 				        <div class="input-field col s6">
-				        	<select>
+				        	<select name="pos2">
 				                <option value="" disabled selected>Choose</option>
 				                {% for pos in site.data.registration.positions %}
 				                	<option value="{{pos}}">{{pos}}</option>
@@ -55,27 +59,27 @@ permalink: /registration/
 				      </div>
 				      <div class="row">
 				        <div class="input-field col s12">
-				          <input placeholder="Viking Warriors" id="previous-clubs" type="text" class="validate">
+				          <input placeholder="Viking Warriors" id="previous-clubs" type="text" class="validate" name="previous_clubs">
 				          <label for="previous-clubs">Previous Clubs</label>
 				        </div>
 				      </div>
 				      <div class="row">
 				        <div class="input-field col s12 m6">
-				          	<select>
+				          	<select name="combine">
 				                  <option value="" disabled selected>Choose</option>
 				                  {% for item in site.data.global.combines %}
-				                  <option value="{{item.country}},{{item.date}}" data-icon="{{item.image-url}}" class="circle"> {{item.country}}, {{item.date}} </option>
+				                  <option value="{{item.code}}: {{item.country}}, {{item.date}}" data-icon="{{item.image-url}}" class="circle"> {{item.country}}, {{item.date}} </option>
 				                  {% endfor %}
 				            </select>
 				          <label>COMBINE</label>
 				        </div>
 				        <div class="input-field col s12 m6">
-				          <input placeholder="Country Name" id="country_name" type="text" class="validate">
+				          <input placeholder="Country Name" id="country_name" type="text" class="validate" name="country">
 				          <label for="country_name"> Passport Issuing Country </label>
 				        </div>
 				      </div>
 				        <div class="col s12">
-		        	      <input type="checkbox" id="box"/>
+		        	      <input type="checkbox" id="box" name="agree_to_terms" />
 		        	      <label for="box">CHECK BOX IF YOU AGREE TO OUR <a target="_blank" href="/terms_conditions"> TERMS AND CONDITIONS </a> </label>
 				        </div>
 				        <div class="col s12 valign-wrapper">

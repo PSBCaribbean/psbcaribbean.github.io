@@ -1,6 +1,6 @@
 title: "PSB Caribbean"
 combines:
-  - {country: 'Antigua & Barbuda', image-url: '/assets/images/first-card-image.jpg', date: 'February 16th 2017', sec-color: 'color-grey'}
-  - {country: 'Grenada', image-url: '/assets/images/second-card-image.jpg', date: 'March 16th 2017', sec-color: 'color-grey'}
-  - {country: 'St. Vincent', image-url: '/assets/images/third-card-image.jpg', date: 'April 16th 2017', sec-color: 'color-grey'}
+  - {country: 'Antigua & Barbuda', image-url: '/assets/images/first-card-image.jpg', date: 'February 16th 2017', sec-color: 'color-grey', information: 'This combine will span for X amount of days and will take place at the John Doe Stadium.', code: "comb1"}
+  - {country: 'Grenada', image-url: '/assets/images/second-card-image.jpg', date: 'March 16th 2017', sec-color: 'color-grey', information: 'This combine will span for X amount of days and will take place at the John Doe Stadium.', code: "comb2"}
+  - {country: 'St. Vincent', image-url: '/assets/images/third-card-image.jpg', date: 'April 16th 2017', sec-color: 'color-grey', information: 'This combine will span for X amount of days and will take place at the John Doe Stadium.', code: "comb3"}
 response: "Thank you for your submission. Our team at PSB will contact you shortly with more information about the next steps. We value your submission and will respond within <em> 24 </em> hours. Thanks for visiting PSB Caribbean!"

@@ -12,27 +12,31 @@ permalink: /contact_us/
 			</div>
 			<div class="valign">
 				<div class="row">
-					<form class="col s12 psb-form">
+					<form class="col s12 psb-form" action="https://formspree.io/raman@karibfusion.com" method="POST">
+						<input type="hidden" name="_next" value="/form_response" />
+						<input type="hidden" name="_subject" value="Website Contact Form" />
+						<input type="hidden" name="_format" value="plain" />
+						<input type="text" name="_gotcha" style="display:none" />
 						<div class="row">
 						  <div class="input-field col s12 m6">
-						    <input placeholder="John Doe" id="full_name" type="text" class="validate">
+						    <input placeholder="John Doe" name="full_name" id="full_name" type="text" class="validate">
 						    <label for="full_name">Full Name</label>
 						  </div>
 						  <div class="input-field col s12 m6">
-						    <input placeholder="johndoe@email.com" id="email" type="email" class="validate">
+						    <input placeholder="johndoe@email.com" name="email" id="email" type="email" class="validate">
 						    <label for="email">Email</label>
 						  </div>
 						</div>
 						<div class="row">
 							<div class="input-field col s12 m6">
-							  <input placeholder="Subject of your message" id="subject" type="text" class="validate">
+							  <input placeholder="Subject of your message" name="subject" id="subject" type="text" class="validate">
 							  <label for="subject">Subject</label>
 							</div>
 							<div class="input-field col s12 m6">
-							  	<select>
+							  	<select name="inquiry">
 							          <option value="" disabled selected>Select Inquiry</option>
 							          {% for item in site.data.global.combines %}
-							          <option value="{{item.country}},{{item.date}}" data-icon="{{item.image-url}}" class="circle"> {{item.country}}, {{item.date}} </option>
+							          <option value="{{item.code}}:{{item.country}}, {{item.date}}" data-icon="{{item.image-url}}" class="circle"> Combine: {{item.country}}, {{item.date}} </option>
 							          {% endfor %}
 							          <option value="General Inquiry"> General/Other Inquiry </option>
 							    </select>
@@ -41,7 +45,7 @@ permalink: /contact_us/
 						</div>
 						<div class="row">
 						  <div class="input-field col s12">
-						    <textarea class="materialize-textarea" placeholder="Type your message here..." id="message"></textarea>
+						    <textarea name="message" class="materialize-textarea" placeholder="Type your message here..." id="message"></textarea>
 						    <label for="message">Message</label>
 						  </div>
 						</div>

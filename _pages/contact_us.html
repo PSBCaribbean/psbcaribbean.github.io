@@ -1,0 +1,58 @@
+---
+layout: default
+permalink: /contact_us/
+---
+
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="valign">
+				<h2 class="header padding"> CONTACT US </h2>
+				<p class="flow-text justify"> {{site.data.contact_us.intro}} </p>
+			</div>
+			<div class="valign">
+				<div class="row">
+					<form class="col s12 psb-form">
+						<div class="row">
+						  <div class="input-field col s12 m6">
+						    <input placeholder="John Doe" id="full_name" type="text" class="validate">
+						    <label for="full_name">Full Name</label>
+						  </div>
+						  <div class="input-field col s12 m6">
+						    <input placeholder="johndoe@email.com" id="email" type="email" class="validate">
+						    <label for="email">Email</label>
+						  </div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 m6">
+							  <input placeholder="Subject of your message" id="subject" type="text" class="validate">
+							  <label for="subject">Subject</label>
+							</div>
+							<div class="input-field col s12 m6">
+							  	<select>
+							          <option value="" disabled selected>Select Inquiry</option>
+							          {% for item in site.data.global.combines %}
+							          <option value="{{item.country}},{{item.date}}" data-icon="{{item.image-url}}" class="circle"> {{item.country}}, {{item.date}} </option>
+							          {% endfor %}
+							          <option value="General Inquiry"> General/Other Inquiry </option>
+							    </select>
+							  <label>Inquiry</label>
+							</div>
+						</div>
+						<div class="row">
+						  <div class="input-field col s12">
+						    <input placeholder="Type your message here..." id="message" type="text" class="validate">
+						    <label for="message">Message</label>
+						  </div>
+						</div>
+				        <div class="col s12 valign-wrapper">
+					        <button class="btn waves-effect waves-light valign submit-btn" type="submit" name="action">Submit
+					            <i class="material-icons right"></i>
+					        </button>
+				        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

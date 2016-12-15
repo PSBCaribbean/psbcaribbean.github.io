@@ -1,0 +1,54 @@
+privacy-heading: "Privacy Policy"
+privacy-sections:
+  -
+    paragraphs: 
+      - {text: "This privacy policy sets out how PSB Caribbean uses and protects any information that you give KaribFusion Inc. when you use this website."}
+      - {text: "PSB Caribbean is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website then you can be assured that it will only be used in accordance with this privacy statement."}
+      - {text: "PSB Caribbean may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from December 19, 2016."}
+  - 
+    heading: "What we collect:"
+    paragraphs: "Please only submit the requested information below. Do not submit any other confidential, proprietary or sensitive information (e.g. Bank Information, Credit Card No., Financial Information or other sensitive information). If you submit any sensitive information that was not requested on the website you do so at your own risk and PSB Caribbean will not be liable or responsible for the consequences of your action."
+    list: 
+      - {text: "Name"}
+      - {text: "Email Address"}
+      - {text: "Date of Birth"}
+      - {text: "Phone Number"}
+      - {text: "Passport issuing country"}
+  -
+    heading: "What we do with the information we gather"
+    paragraphs:
+      - {text: "We require this information to register for upcoming combines, for inquiries, and in particular for the following reasons:"}
+    list:
+      - {text: "Internal record keeping"}
+      - {text: "Security"}
+      - {text: "Cookies"}
+  - 
+    heading: "Internal record keeping"
+    paragraphs: 
+      - {text: "We will use the information to contact you about your interest in upcoming combines and making the neccesary arrangements for the next step  ."}
+  -
+    heading: "Security"
+    paragraphs: 
+      - {text: "We are committed to ensuring that your information is secure. In order to prevent unauthorized access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online."}
+  -
+    heading: "Cookies"
+    paragraphs:
+      - {text: "A cookie is a small file which asks permission to be placed on your computer’s hard drive. Once you agree, the file is added and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences."}
+      - {text: "We use traffic log cookies to identify which pages are being used. This helps us analyze data about webpage traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system."}
+      - {text: "Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us."}
+      - {text: "You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website."}
+  -
+    heading: "Links to other websites"
+    paragraphs: 
+      - {text: "Our website may contain links to other websites or web applications we have created. However, once you have used these links to leave our site, you should note that we no longer have any control over those websites. We are not responsible for the protection and privacy of any information which you provide whilst visiting such sites; those sites are not governed by this privacy statement."}
+  -
+    heading: "Controlling your personal information"
+    paragraphs:
+      - {text: "We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so."}
+      - {text: "If you believe that any information we are holding on you is incorrect or incomplete, please write to or email <em> registerpsbcaribbean.com </em> us as soon as possible. We will promptly correct any information found to be incorrect."}
+disclaimer-heading: "Disclaimer"
+disclaimer-paragraphs: 
+  - {text: "The information contained in this website is for general information purposes only. The information is provided by PSB Caribbean. We endeavour to keep the information up to date and correct however we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk."}
+  - {text: "In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website."}
+  - {text: "Through this website you are able to link to other websites which may not be under the control of PSB Caribbean We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them."}
+  - {text: "Every effort is made to keep the website up and running smoothly. However, PSB Caribbean takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control."}

@@ -7,7 +7,7 @@
 @import '../bower_components/materialize/sass/materialize';
 
 // Our variables
-$banner-font-family: 'Permanent Marker', sans-serif;
+$banner-font-family: 'Permanent Marker', cursive;
 $header-font-family: 'Catamaran', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 800;
@@ -208,7 +208,6 @@ footer{
     line-height: 86px;
     color: $psb-white;
     strong{
-        font-weight: 800;
         font-size: 60px;
     }
 }
@@ -221,7 +220,6 @@ footer{
     color: $psb-white;
     text-align: center;
     strong{
-        font-weight: 800;
         font-size: 60px;
     }
 }

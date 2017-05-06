@@ -17,9 +17,9 @@
         </div>
       </div>
     </a>
-    <div id="{{combine.code}}" class="modal">
+    <div id="{{combine.code}}" class="modal modal-fixed-footer">
       <div class="modal-content">
-        <h4>{{combine.country}} - {{combine.date}}</h4>
+        <h4>{{combine.country}}: {{combine.date}}</h4>
         {% for info in combine.information %}
           <h5>{{ info.title }}</h5>
           <ul>
@@ -31,7 +31,7 @@
       </div>
       <div class="modal-footer">
         <a href="#!" class=" modal-action modal-close waves-effect waves-yellow btn-flat">CLOSE</a>
-        <a href="/registration" class="btn-flat modal-action waves-yellow register-modal-btn">REGISTER NOW</a>
+        <a href="/registration?combine={{combine.code}}" class="btn-flat modal-action waves-yellow register-modal-btn">REGISTER NOW</a>
       </div>
      </div>
     {% endfor %}

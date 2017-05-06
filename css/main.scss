@@ -7,7 +7,7 @@
 @import '../bower_components/materialize/sass/materialize';
 
 // Our variables
-$banner-font-family: 'Permanent Marker', cursive;
+$banner-font-family: 'Permanent Marker', 'Catamaran', sans-serif;
 $header-font-family: 'Catamaran', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 800;
@@ -202,25 +202,27 @@ footer{
 .slide-down{
     width: 100%;
     font-family: $banner-font-family;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 50px;
     padding-right: 80px;
     line-height: 86px;
     color: $psb-white;
     strong{
         font-size: 60px;
+        font-weight: 800;
     }
 }
 
 .slide-down-bottom{
     width: 100%;
     font-family: $banner-font-family;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 50px;
     color: $psb-white;
     text-align: center;
     strong{
         font-size: 60px;
+        font-weight: 800;
     }
 }
 

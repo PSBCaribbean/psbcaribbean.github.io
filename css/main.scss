@@ -261,14 +261,17 @@ footer{
 .combine-card{
     padding: 20px;
 
-    .card-image .after{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: rgba(0, 0, 0, .3);
+    .card .card-image{
+        max-height: 75%;
+        .after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgba(0, 0, 0, .3);
+        }
     }
 
 }

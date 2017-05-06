@@ -105,14 +105,14 @@ $on-laptop:        800px;
 
 .nav-header{
     a img{
-        height: 120px;;
+        height: 50px;
         padding-left: 50px;
     }
 }
 
 nav{
-    height: 150px;
-    line-height: 150px;
+    height: 60px;
+    line-height: 60px;
 }
 nav, footer {
 
@@ -172,7 +172,7 @@ footer{
 //Banner
 
 .banner {
-	height: 100vh;
+	height: 50vh;
 	width: 100%;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -218,9 +218,7 @@ footer{
     font-family: $banner-font-family;
     font-weight: 400;
     font-size: 68px;
-    line-height: 86px;
     color: $psb-white;
-    padding-top: 30vh;
     text-align: center;
     strong{
         font-weight: 800;
@@ -229,15 +227,15 @@ footer{
 }
 
 @media (max-width: 600px){
-
     .slide-down-bottom{
-        font-size: 50px;
-        text-align: center;
-        margin: 0 auto;
+        font-size: 30px;
         strong{
-            font-size: 60px;
+            font-size: 40px;
         }
     }
+
+}
+@media (max-width: 600px){
 
     h1{
         font-size: 45px;
@@ -558,6 +556,12 @@ body::before{ content:''; display:inline-block; height:100%; vertical-align:midd
   width: 70%;
 }
 
-.register-modal-btn:hover{
+
+.modal .modal-footer .btn-flat.register-modal-btn{
     background-color: $psb-yellow;
+    margin-right: 10px;
+
+    &:hover{
+        background: $psb-yellow;
+    }
 }
